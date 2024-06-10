@@ -1,0 +1,11 @@
+======
+README
+======
+
+Let's test the source code with our custom checker:
+
+  >>> import p01.checker
+  >>> import p01.build
+
+  >>> checker = p01.checker.Checker(p01.checker.CHECKERS)
+  >>> checker.check(p01.build)

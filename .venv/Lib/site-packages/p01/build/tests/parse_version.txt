@@ -1,0 +1,30 @@
+The pkg_resources.parse_version method is deprecated. Let's test our backported
+method here:
+
+  >>> import p01.build.base
+
+  >>> def printVersions(g):
+  ...     for v in tuple(g):
+  ...         print(v)
+
+  >>> printVersions(p01.build.base.parseVersion('0.0.1'))
+  00000000
+  00000000
+  00000001
+  *final
+
+  >>> printVersions(p01.build.base.parseVersion('0.0.1dev0'))
+  00000000
+  00000000
+  00000001
+  *@
+  *final
+
+  >>> printVersions(p01.build.base.parseVersion('0.5.0'))
+  00000000
+  00000005
+  *final
+
+  >>> printVersions(p01.build.base.parseVersion('5.0.0'))
+  00000005
+  *final

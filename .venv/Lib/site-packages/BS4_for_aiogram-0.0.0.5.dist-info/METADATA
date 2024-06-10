@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: BS4-for-aiogram
+Version: 0.0.0.5
+Summary: I delete chardet code from dammit.py in BS4 library
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: No
+Keywords: BS4 aiogram BeautifulSoup4
+Platform: UNKNOWN
+Requires-Dist: soupsieve
+
+Original project: https://pypi.org/project/beautifulsoup4/
+
+
